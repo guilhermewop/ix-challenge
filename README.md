@@ -1,53 +1,30 @@
+# List Posts by Rating
 
-# Challenges
-Code challenges for developers and designers.
+You are a web programmer. You have users. Your users rate posts on your site. You want to put the highest-rated posts at the top and lowest-rated at the bottom. You need some sort of "score" to sort by.
 
-We believe recruitment is the most critical part of an organization. People should experience some time working together before deciding on making it permanent.
-This repo contains code challenges we'd like to see solved by people interested in working with us.
+### Objectives
 
-We tend not to place job ads, as we prefer references and proactive candidates. With this in mind, feel free to take a challenge and let us know you're working on it.
-Mostly, we work with Ruby and java, but also have some stuff in javascript. Even if you don't have experience in these technologies, as long as you are willing to learn them and want to build great stuff for the web, we can probably be a good fit.
+We'd like to see a working web service with the following endpoints:
 
+```
+/upvote/:post_id
+/downvote/:post_id
+/posts/
+```
 
-### Available challenges
+No UI is required. You can use a database of your choice.
 
-#### Backend Development
-* [User Changes](/1-development/user-changes.md)
-* [Client from the Bahamas](/1-development/client-from-the-bahamas.md)
-* [List Posts by Ratings](/1-development/list_posts_by_rating.md)
+Tech stack: Feel free to use the stack that you feel more comfortable.This means you can choose any language you need to get the job done.
 
-#### Frontend Development
-* [React Challenge](/2-frontend/react-challenge.md)
-* [Design Implementation Challenge](/3-design-frontend/design-frontend-challenge.md)
+Your solution should consider that if you have a first post with 600 up votes and 400 down votes means that you have 60% of up votes and 40% of down votes, and if you have another post with 6 up votes and 4 down votes you have the same % of the previous post, 60% of up votes and 40% of down votes.
 
+Hint: Note that the score in % of the two posts are equal, but the real "values" are significantly differents
 
-### How we work ##
+You should be doing the solution on a specific branch. Once you have something to delivery, you can open a Pull Request. You can use the Pull Request if you'd like some feedback on your code or to discuss something with us.
 
-* **People** - you know, the guys in the team(s). We're not afraid to ask for help and we're not afraid to express our opinions. We're here to help.eachother.
+### Things We value
 
-* **Culture** - We follow RUPEAL's guiding principles:
+- Clean code, we want you to show us the best code you can do
+- If you are familiar with TDD, BDD or any testing process, please show us your skills
 
-  * Give your best
-  * Show That You Care
-  * Build an environment of strong, open and honest relationships
-  * Deliver WOW through your service
-  * Stay humble
-  * Do What's Right
-  * Be coachable and don’t take it personally
-  * Do more with less
-  * Pursue growth and personal development
-  * Have fun
-
-* **You** - by joining our team, feel free to question all the items below and propose new ideas on how we work. This is definitely not a static thing.
-
-* **GitHub** - all our code is hosted here. We use Pull Requests and do code reviews for those. Everyone on the team reviews PRs. It's expected that you write quality code with automated tests. Once a PR is reviewed and accepted, the person who opened the PR should merge it and delete the branch.
-
-* **Continuous Integration** - we use Semaphore and CircleCI for our CI needs. Everytime we push to a branch, our test suite runs on Semaphore on some projects, CircleCI on others.
-
-* **Slack** - we mostly communicate asynchronously between the development team and with other teams. This is our chat tool. Abuse it.
-
-* **Jira** - our products' backlog is managed in Jira. Once we estimate all known user-stories, the sprint backlog is automatically built. Each team member will select a user-story to work from that sprint backlog and will update the needed tasks' status. This way we keep focused until the end of the sprint.
-
-* **AWS** - our products are mainly hosted on AWS, so a basic knowledge of it is appreciated.
-
-* **Support tasks** - We are paranoid about providing top notch support to our customers. We have a dedicated customer support team working full-time communicating with clients. Our development team works very closely with the customer support team delivering happiness to our clients.
+Tech stack: please use preferably Ruby / Rails or JAVA, but if you are more versatile in a different tech stack, you may use one of your choice.
